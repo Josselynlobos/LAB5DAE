@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entradas de {{ autor.nombre }}</title>
+</head>
+<body>
+    <h1>Entradas de {{ autor.nombre }}</h1>
+    <ul>
+        {% for entrada in entradas %}
+            <li>{{ entrada.titulo }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
